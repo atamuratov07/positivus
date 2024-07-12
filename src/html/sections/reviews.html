@@ -1,0 +1,94 @@
+<section id="reviews" class="section container">
+	<header class="section__header">
+		<h2 class="section__title text-bg">Testimonials</h2>
+		<div class="section__description">
+			<p>
+				Hear from Our Satisfied Clients: Read Our Testimonials to Learn More
+				about Our Digital Marketing Services
+			</p>
+		</div>
+	</header>
+	<div class="section__body">
+		<div class="reviews">
+			<div class="reviews__slider">
+				<ul class="reviews__slider-list">
+					<li class="reviews__slider-item">
+						@@include('../blocks/review-card.html', {"name": "John Smith",
+						"company": "Marketing Director at XYZ Corp"})
+					</li>
+					<li class="reviews__slider-item">
+						@@include('../blocks/review-card.html', {"name": "John Smith",
+						"company": "Marketing Director at XYZ Corp"})
+					</li>
+					<li class="reviews__slider-item">
+						@@include('../blocks/review-card.html', {"name": "John Smith",
+						"company": "Marketing Director at XYZ Corp"})
+					</li>
+					<li class="reviews__slider-item">
+						@@include('../blocks/review-card.html', {"name": "John Smith",
+						"company": "Marketing Director at XYZ Corp"})
+					</li>
+					<li class="reviews__slider-item">
+						@@include('../blocks/review-card.html', {"name": "John Smith",
+						"company": "Marketing Director at XYZ Corp"})
+					</li>
+				</ul>
+			</div>
+
+			<div class="reviews__actions">
+				<button
+					id="reviews-slider-prev"
+					class="reviews__button reviews__button-prev"
+					type="button"
+				>
+					<span class="visually-hidden">Previous slide</span>
+					@@include('../../images/icons/arrow-left.svg')
+				</button>
+
+				<div class="reviews__pagination pagination">
+					<ul class="pagination__list">
+						<li class="pagination__item">
+							<button class="pagination__button" type="button">
+								<span class="visually-hidden">First slide</span>
+								@@include('../../images/icons/star.svg')
+							</button>
+						</li>
+						<li class="pagination__item">
+							<button class="pagination__button" type="button">
+								<span class="visually-hidden">Second slide</span>
+								@@include('../../images/icons/star.svg')
+							</button>
+						</li>
+						<li class="pagination__item">
+							<button class="pagination__button" type="button">
+								<span class="visually-hidden">Third slide</span>
+								@@include('../../images/icons/star.svg')
+							</button>
+						</li>
+						<li class="pagination__item">
+							<button class="pagination__button" type="button">
+								<span class="visually-hidden">Fourth slide</span>
+								@@include('../../images/icons/star.svg')
+							</button>
+						</li>
+						<li class="pagination__item">
+							<button class="pagination__button" type="button">
+								<span class="visually-hidden">Fifth slide</span>
+								@@include('../../images/icons/star.svg')
+							</button>
+						</li>
+					</ul>
+				</div>
+
+				<button
+					id="reviews-slider-next"
+					class="reviews__button reviews__button-bext"
+					type="button"
+				>
+					<span class="visually-hidden">Next slide</span>
+					@@include('../../images/icons/arrow-right.svg')
+				</button>
+			</div>
+		</div>
+	</div>
+</section>

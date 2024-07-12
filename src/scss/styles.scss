@@ -1,0 +1,16 @@
+// Global styles
+@import 'styles/normalize', 'styles/fonts', 'styles/mixins', 'styles/media',
+	'styles/vars', 'styles/utils', 'styles/globals';
+
+// UI Components
+@import 'ui/burger-button.scss', 'ui/button.scss', 'ui/pagination.scss',
+	'ui/field.scss', 'ui/radio.scss';
+
+// Components
+@import 'blocks/service-card', 'blocks/team-card', 'blocks/review-card',
+	'blocks/soc1als';
+
+// Sections
+@import 'sections/header', 'sections/section', 'sections/hero',
+	'sections/banner', 'sections/studies', 'sections/process', 'sections/team',
+	'sections/reviews', 'sections/contact', 'sections/footer';

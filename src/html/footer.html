@@ -1,0 +1,84 @@
+<footer class="footer container">
+	<div class="footer__inner">
+		<div class="footer__nav">
+			<a href="/" class="footer__logo logo">
+				<img
+					class="logo__image"
+					src="./images/logo-light.svg"
+					alt="Positivus"
+					width="180"
+					height="30"
+					loading="lazy"
+				/>
+			</a>
+
+			@@include('./blocks/navigation.html', {"class": "footer"})
+
+			<div class="footer__soc1als soc1als">
+				<ul class="soc1als__list">
+					<li class="soc1als__item">
+						<a class="soc1als__link" href="/">
+							<span class="visually-hidden">LinkedIn</span>
+							@@include('../images/icons/linkedin.svg')
+						</a>
+					</li>
+					<li class="soc1als__item">
+						<a class="soc1als__link" href="/">
+							<span class="visually-hidden">Facebook</span>
+							@@include('../images/icons/facebook.svg')
+						</a>
+					</li>
+					<li class="soc1als__item">
+						<a class="soc1als__link" href="/">
+							<span class="visually-hidden">Twitter</span>
+							@@include('../images/icons/twitter.svg')
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+
+		<div class="footer__body">
+			<div class="footer__contact">
+				<h2 class="footer__contact-title h4 text-bg">Contact Us:</h2>
+				<address class="footer__contact-body">
+					<p>
+						Email: <a href="mailto:info@positivus.com">info@positivus.com</a>
+					</p>
+					<p>Phone: <a href="tel:5555678901">555-567-8901</a></p>
+					<p>
+						Address: 1234 Main St<br />
+						Moonstone City, Stardust State 12345
+					</p>
+				</address>
+			</div>
+
+			<form class="footer__form">
+				<h2 class="visually-hidden">Subscription</h2>
+				<div class="footer__form-field field field--dark field--large">
+					<label class="field__label visually-hidden" for="subscribe-email">
+						Email
+					</label>
+					<input
+						class="field__input"
+						id="subscribe-email"
+						name="email"
+						placeholder="Email"
+						type="email"
+						required
+					/>
+				</div>
+				<button class="footer__form-button button button--green">
+					Subscribe to news
+				</button>
+			</form>
+		</div>
+
+		<div class="footer__extra">
+			<p class="footer__copyright">
+				© <time datetime="2023">2023</time> Positivus. All Rights Reserved.
+			</p>
+			<a href="/" class="footer__privacy-policy-link">Privacy Policy</a>
+		</div>
+	</div>
+</footer>

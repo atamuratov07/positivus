@@ -1,0 +1,66 @@
+<section id="team" class="section container">
+	<header class="section__header">
+		<h2 class="section__title text-bg">Team</h2>
+		<div class="section__description">
+			<p>
+				Meet the skilled and experienced team behind our successful digital
+				marketing strategies
+			</p>
+		</div>
+	</header>
+	<div class="section__body">
+		<div class="team">
+			<ul class="team__list grid grid--3">
+				<li class="team__item">
+               @@include('../blocks/team-card.html', {
+                  "name": "John Smith",
+                  "image": 1,
+                  "post": "CEO and Founder",
+                  "body": "10+ years of experience in digital marketing. Expertise in SEO, PPC, and content strategy"
+               })
+            </li>
+				<li class="team__item">
+               @@include('../blocks/team-card.html', {
+                  "name": "Jane Doe",
+                  "image": 2,
+                  "post": "Director of Operations",
+                  "body": "7+ years of experience in project management and team leadership. Strong organizational and communication skills"
+               })
+            </li>
+				<li class="team__item">
+               @@include('../blocks/team-card.html', {
+                  "name": "Michael Brown",
+                  "image": 3,
+                  "post": "Senior SEO Specialist",
+                  "body": "5+ years of experience in SEO and content creation. Proficient in keyword research and on-page optimization"
+               })
+            </li>
+				<li class="team__item">
+               @@include('../blocks/team-card.html', {
+                  "name": "Emily Johnson",
+                  "image": 4,
+                  "post": "PPC Manager",
+                  "body": "3+ years of experience in paid search advertising. Skilled in campaign management and performance analysis"
+               })
+            </li>
+				<li class="team__item">
+               @@include('../blocks/team-card.html', {
+                  "name": "Brian Williams",
+                  "image": 5,
+                  "post": "Social Media Specialist",
+                  "body": "4+ years of experience in social media marketing. Proficient in creating and scheduling content, analyzing metrics, and building engagement"
+               })
+            </li>
+				<li class="team__item">
+               @@include('../blocks/team-card.html', {
+                  "name": "Sarah Kim",
+                  "image": 6,
+                  "post": "Content Creator",
+                  "body": "2+ years of experience in writing and editing Skilled in creating compelling, SEO-optimized content for various industries"
+               })
+            </li>
+			</ul>
+         <button class="team__button button" type="button">See all team</button>
+		</div>
+	</div>
+</section>

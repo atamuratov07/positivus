@@ -1,0 +1,83 @@
+<section id="contact" class="section container">
+	<header class="section__header">
+		<h2 class="section__title text-bg">Contact Us</h2>
+		<div class="section__description">
+			<p>Connect with Us: Let's Discuss Your Digital Marketing Needs</p>
+		</div>
+	</header>
+	<div class="section__body">
+		<div class="contact">
+			<form class="contact__form">
+				<fieldset class="contact__types radios">
+					<legend class="radios__title visually-hidden">
+						Request type
+					</legend>
+
+					<label class="radios__item radio">
+						<input
+							class="radio__input visually-hidden"
+							name="request-type"
+							type="radio"
+							value="@@label"
+							checked
+						/>
+
+						<span class="radio__emulator"></span>
+						<span class="radio__label">Say Hi</span>
+					</label>
+
+					<label class="radios__item radio">
+						<input
+							class="radio__input visually-hidden"
+							name="request-type"
+							type="radio"
+							value="@@label"
+							checked
+						/>
+
+						<span class="radio__emulator"></span>
+						<span class="radio__label">Get a Quote</span>
+					</label>
+				</fieldset>
+
+				<div class="contact__body">
+					<div class="contact__field field">
+						<label class="field__label" for="name">Name</label>
+						<input
+							class="field__input"
+							id="name"
+							name="name"
+							placeholder="Name"
+						/>
+					</div>
+					<div class="contact__field field">
+						<label class="field__label" for="email">Email*</label>
+						<input
+							class="field__input"
+							id="email"
+							name="email"
+							placeholder="Email"
+							type="email"
+							required
+						/>
+					</div>
+					<div class="contact__field field">
+						<label class="field__label" for="message">Message*</label>
+						<textarea
+							class="field__input field__input--textarea"
+							id="message"
+							name="message"
+							placeholder="Message"
+							type="email"
+							required
+						></textarea>
+					</div>
+				</div>
+
+				<button class="contact__button button" type="submit">
+					Send Message
+				</button>
+			</form>
+		</div>
+	</div>
+</section>

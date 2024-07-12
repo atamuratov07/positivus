@@ -1,0 +1,47 @@
+.radios {
+	display: flex;
+	column-gap: 35px;
+
+	&__item {
+	}
+}
+
+.radio {
+	display: flex;
+	align-items: center;
+	column-gap: 14px;
+	transition-duration: var(--transition-duration);
+
+	@include hover {
+		opacity: 0.8;
+	}
+
+	&__input {
+		&:not(:checked) + .radio__emulator::after {
+			opacity: 0;
+		}
+	}
+
+	&__emulator {
+		@include flex-center;
+		@include square(28px);
+
+		position: relative;
+		border-radius: 50%;
+		border: var(--border);
+		background-color: var(--color-white);
+
+		&::after {
+			@include abs-center;
+			@include square(60%);
+
+			content: '';
+			background-color: var(--color-green);
+			border-radius: inherit;
+			transition-duration: var(--transition-duration);
+		}
+	}
+
+	&__label {
+	}
+}

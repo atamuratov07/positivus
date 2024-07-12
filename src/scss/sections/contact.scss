@@ -1,0 +1,72 @@
+.contact {
+	position: relative;
+	overflow-x: hidden;
+
+	@include mobile-above {
+		padding: 60px 80px 100px;
+		background-color: var(--color-grey);
+		border-radius: var(--border-radius-large);
+	}
+
+	&::after {
+		--imageOffsetY: 60px;
+
+		content: '';
+		position: absolute;
+		top: 50%;
+		left: 100%;
+		translate: -50% -50%;
+		height: calc(100% - var(--imageOffsetY) * 2);
+		aspect-ratio: 1;
+		background: url('../images/contact-us-bg.svg') center/contain no-repeat;
+
+		@include tablet {
+			display: none;
+		}
+	}
+
+	&__form,
+	&__body {
+		display: flex;
+		flex-direction: column;
+	}
+
+	&__types,
+	&__body {
+		@include mobile {
+			background-color: var(--color-grey);
+		}
+	}
+
+	&__types {
+		@include mobile {
+			padding: 40px 50px;
+			border-radius: var(--border-radius-large) var(--border-radius-large) 0 0;
+		}
+	}
+
+	&__form {
+		@include tablet-above {
+			max-width: 560px;
+			margin-right: 300px;
+		}
+
+		@include mobile-above {
+			row-gap: 40px;
+		}
+	}
+
+	&__body {
+		row-gap: 25px;
+
+		@include mobile {
+			padding: 10px 30px 50px;
+			border-radius: 0 0 var(--border-radius-large) var(--border-radius-large);
+			row-gap: 20px;
+		}
+	}
+
+	&__button {
+		margin-top: 30px;
+	}
+}

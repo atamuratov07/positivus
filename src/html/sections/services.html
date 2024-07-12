@@ -1,0 +1,112 @@
+<section id="services" class="section section--hidden-x container">
+	<header class="section__header">
+		<h2 class="section__title text-bg">Services</h2>
+		<div class="section__description">
+			<p>
+				At our digital marketing agency, we offer a range of services to help
+				businesses grow and succeed online. These services include:
+			</p>
+		</div>
+	</header>
+
+	<div class="section__body">
+
+		<div class="services">
+			<ul class="services__list grid grid--2">
+				<li class="services__item">
+					@@include(
+                  '../blocks/services-card.html', 
+                  {
+                     "title-top": "Search engine",
+                     "title-bottom": "optimization", 
+                     "image": "1",
+                     "text-bg-color": "text-bg--green"
+                  })
+				</li>
+				<li class="services__item">
+					@@include(
+                  '../blocks/services-card.html', 
+                  {
+                     "title-top": "Social Media",
+                     "title-bottom": "Marketing", 
+                     "image": "2",
+                     "bg-color": "services-card--dark-bg",
+                     "text-bg": "text-bg--light",
+                     "link-color": "services-card__link--light"
+                  })
+				</li>
+				<li class="services__item">
+					@@include(
+                  '../blocks/services-card.html', 
+                  {
+                     "title-top": "Content",
+                     "title-bottom": "Creation",  
+                     "image": "3",
+                     "text-bg": "text-bg--light",
+                     "bg-color": "services-card--green-bg"
+                  })
+				</li>
+				<li class="services__item">
+					@@include(
+                  '../blocks/services-card.html', 
+                  {
+                     "title-top": "Pay-per-click",
+                     "title-bottom": "advertising", 
+                     "image": "4",
+                     "text-bg": "text-bg--light",
+                     "bg-color": "services-card--green-bg"
+                  })
+				</li>
+				<li class="services__item">
+					@@include(
+                  '../blocks/services-card.html', 
+                  {
+                     "title-top": "Email",
+                     "title-bottom": "Marketing", 
+                     "image": "5",
+                     "text-bg-color": "text-bg--green"
+                  })
+				</li>
+				<li class="services__item">
+					@@include(
+                  '../blocks/services-card.html', 
+                  {
+                     "title-top": "Analytics",
+                     "title-bottom": "and Tracking", 
+                     "image": "6",
+                     "bg-color": "services-card--dark-bg",
+                     "text-bg-color": "text-bg--green",
+                     "link-color": "services-card__link--light"
+                  })
+				</li>
+			</ul>
+
+			<div class="services__banner banner">
+            <div class="banner__inner">
+               <div class="banner__body">
+                  <h3 class="banner__title">Let’s make things happen</h3>
+
+                  <div class="banner__description">
+                     <p>
+                        Contact us today to learn more about how our digital marketing services can help your business grow and succeed online.
+                     </p>
+                  </div>
+
+                  <button class="banner__button button" type="button">
+                     Get your free proposal
+                  </button>
+               </div>
+               <img 
+                  class="banner__image hidden-mobile" 
+                  src="./images/banner-bg.svg" 
+                  alt="" 
+                  width="359" 
+                  height="394" 
+                  loading="lazy" 
+               />
+            </div>
+         </div>
+		</div>
+
+	</div>
+</section>

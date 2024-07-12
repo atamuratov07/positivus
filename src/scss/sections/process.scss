@@ -1,0 +1,113 @@
+.process {
+	&__list {
+		display: flex;
+		flex-direction: column;
+		row-gap: 30px;
+		counter-reset: custom-counter;
+		list-style: none;
+
+		@include mobile {
+			row-gap: 20px;
+		}
+	}
+
+	&__item {
+		--counterContent: counter(custom-counter);
+
+		counter-increment: custom-counter;
+
+		&:nth-child(-n + 9) {
+			--counterContent: '0' counter(custom-counter);
+		}
+	}
+
+	&__accordion {
+		--activeIndicator: -90deg;
+
+		@include box;
+
+		padding: 40px 60px;
+		background-color: var(--color-grey);
+		cursor: pointer;
+		transition-duration: var(--transition-duration);
+
+		@include hover {
+			background-color: var(--color-green);
+		}
+
+		@include mobile {
+			padding: 30px;
+		}
+
+		&._active {
+			--activeIndicator: 0deg;
+
+			background-color: var(--color-green);
+		}
+
+		&-header {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			column-gap: 50px;
+			user-select: none;
+
+			@include mobile {
+				column-gap: 20px;
+			}
+		}
+
+		&-title {
+			@include fluid-text(18, 30);
+
+			display: flex;
+			align-items: center;
+			column-gap: 25px;
+
+			&:before {
+				content: var(--counterContent);
+				font-size: 2em;
+
+				@include mobile {
+					font-size: 30px;
+				}
+			}
+		}
+
+		&-indicator {
+			@include flex-center;
+			@include square(58px);
+
+			position: relative;
+			background-color: var(--color-grey);
+			border: var(--border);
+			border-radius: 50%;
+			flex-shrink: 0;
+
+			@include mobile {
+				width: 30px;
+			}
+
+			&::before,
+			&::after {
+				@include abs-center;
+
+				content: '';
+				width: 45%;
+				height: 10%;
+				background-color: var(--color-dark);
+				transition-duration: var(--transition-duration);
+			}
+
+			&::after {
+				rotate: var(--activeIndicator);
+			}
+		}
+
+		&-body {
+			margin-top: 30px;
+			padding-top: 30px;
+			border-top: var(--border);
+		}
+	}
+}

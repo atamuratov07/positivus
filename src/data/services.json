@@ -1,0 +1,44 @@
+[
+	{
+		"titleTop": "Search engine",
+		"titleBottom": "optimization",
+		"image": "1",
+		"textBgColor": "green"
+	},
+	{
+		"titleTop": "Social Media",
+		"titleBottom": "Marketing",
+		"image": "2",
+		"bgColor": "dark",
+		"textBgColor": "light",
+		"linkColor": "light"
+	},
+	{
+		"titleTop": "Content",
+		"titleBottom": "Creation",
+		"image": "3",
+		"textBg": "light",
+		"bgColor": "green"
+	},
+	{
+		"titleTop": "Pay-per-click",
+		"titleBottom": "advertising",
+		"image": "4",
+		"textBg": "light",
+		"bgColor": "green"
+	},
+	{
+		"titleTop": "Email",
+		"titleBottom": "Marketing",
+		"image": "5",
+		"textBg": "green"
+	},
+	{
+		"titleTop": "Analytics",
+		"titleBottom": "and Tracking",
+		"image": "6",
+		"bgColor": "dark",
+		"textBg": "green",
+		"linkColor": "light"
+	}
+]
